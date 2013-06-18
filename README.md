@@ -5,7 +5,7 @@ Oauth2 for Laravel 4
 
 This is very easy to use.
 
-1. Create config file
+Step 1: Create config file
 
 Add a config file to app/config/ezoauth2.php with content:
 
@@ -29,6 +29,6 @@ return array(
 				)
 		);
 		
-2. Add the last value to providers array in app/config/app.php
+Step 2: Add the last value to providers array in app/config/app.php
 
-  	'Khoimk\Ezoauth2\Ezoauth2ServiceProvider'
+  'Khoimk\Ezoauth2\Ezoauth2ServiceProvider'
