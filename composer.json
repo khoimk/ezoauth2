@@ -1,0 +1,20 @@
+{
+    "name": "khoimk/ezoauth2",
+    "description": "Oauth2 for Lavarel 4",
+    "authors": [
+        {
+            "name": "khoimk",
+            "email": "maikhackhoi@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.0.x"
+    },
+    "autoload": {
+        "psr-0": {
+            "Khoimk\\Ezoauth2": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
