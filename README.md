@@ -51,3 +51,7 @@ Step 3: Add this route to route.php
 			}
 		}
 	}
+
+Step 4: Add this line to composer.json file in the root of laravel:
+
+	"khoimk/ezoauth2": "*"
