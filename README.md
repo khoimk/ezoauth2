@@ -32,3 +32,22 @@ return array(
 Step 2: Add the last value to providers array in app/config/app.php
 
   'Khoimk\Ezoauth2\Ezoauth2ServiceProvider'
+
+Step 3: Add this route to route.php
+	
+	if($provider!=''){
+		$o = App::make('ezoauth2');
+		$o->setConfig($provider);
+		$url = $o->authenticate();
+		if($url){
+			return Redirect::to($url);
+		}
+		if(isset($_GET['logout'])){
+			$o->logout();
+		}
+		else{
+			if($user = $o->getUserInfo()){
+				var_dump($user);
+			}
+		}
+	}
