@@ -57,3 +57,5 @@ Step 4: Add this line to composer.json file in the root of laravel:
 	"khoimk/ezoauth2": "*"
 
 This version just support Google and Facebook authentication.
+I will include Twitter and MS in next version.
+Happy coding :)
